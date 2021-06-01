@@ -1,14 +1,17 @@
-# Make plotly Graph into dcc
+# Customize plotly Graph 
 
 ### 요구사항
-   1. plotly.express 또는 go 로 표현되는 그래프를 dash로 래핑하여 html에 삽입해야한다.
+   1. plotly 그래프를 자유자재로 편집해야한다.
 
 ### 기본지식
-   1. dcc.Graph 의 대표적인 argument
-   2. [go.figure의 argument](https://plotly.com/python-api-reference/generated/plotly.graph_objects.Figure.html#plotly.graph_objects.Figure.update_traces)
-### 코드
+   1. [plotly 튜토리얼](https://plotly.com/python/creating-and-updating-figures/#updating-figures)
+   2. [plotly 파이썬 api 문서](https://plotly.com/python-api-reference/index.html)
+   
+   3. plotly 의 figure 오브젝트 인수에는 data와 layout이있다.
+      data : 그래프 오브젝트가 들어가며, 그래프 오브젝트 내에서 개별 그래프에 맞게 axis, marker 등을 커스터마이징 할 수있다. 
+      layout : annotations, ticks, subplot 등을 control 할 수있다.
 
-1. figure를 딕셔너리로서 사용하는 방법 
+### 코드
 ```python
 fig = dict({
     "data": [{"type": "bar",

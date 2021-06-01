@@ -14,4 +14,5 @@
    https://codebeautify.org/yaml-validator 에서는 yaml파일 테스트 가능
 
 5. 그냥 git에서 수정만 하면안되고, local 에서 install 한 뒤 push 해서 올려야함
-6. 
+
+6. 카테고리는 폴더로 만들고, url 과 폴더이름 일치시키기
