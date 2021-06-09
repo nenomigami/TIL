@@ -19,6 +19,8 @@ conda install python=3.8
 import platform
 print(platform.architecture())
 ```
+or powershell
+$ python 후 뒤에 environment 정보 확인
 
 ### terminal에서 파이썬 명령어 바로 실행
 ```powershell
